@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="HU">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dine Democracy</title>
+      <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+      <header>
+            <div class="inner-width">
+                  <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+                  <i class="menu-toggle-btn fas fa-bars"></i>
+                  <nav class="navigation-menu">
+                        <a href="#"><i class="fas fa-home homeColor"></i> Kezdőlap</a>
+                        <a href="#"><i class="fas fa-align-left aboutColor"></i>Rólunk</a>
+                        <a href="#"><i class="fa fa-user-plus invColor"></i>Meghívás</a>
+                        <a href="#"><label for="modal-trigger-center" class="open-modal">
+                              <i class="fas fa-sign-in-alt loginColor" ></i>Bejelentkezés</a></label>
+                        <a href="#"><i class="fas fa-registered registeredColor"></i>Regisztráció</a>
+                  </nav>
+            </div>
+      </header>
+
+      <!-- Telefon hamburger box -->
+      <div class="invisible-div">
+            <div class="menu">
+                  <nav class="menu__nav">
+                        <ul class="menu__list r-list">
+                              <li class="menu__group">
+                                    <a href="#0" class="menu__link r-link">Kezdőlap</a>
+                              </li>
+                              <li class="menu__group">
+                                    <a href="#0" class="menu__link r-link">Rólunk</a>
+                              </li>
+                              <li class="menu__group">
+                                    <a href="#0" class="menu__link r-link">Meghívás</a>
+                              </li>
+                              <li class="menu__group">
+                                    <a href="#0" class="menu__link r-link"><label for="modal-trigger-center" class="open-modal">
+                                          Bejelentkezés
+                                    </label></a>
+                              </li>
+                        </ul>
+                  </nav>
+                  <button class="menu__toggle r-button" type="button">
+                        <span class="menu__hamburger m-hamburger">
+                              <span class="m-hamburger__label">
+                                    <span class="menu__toggle-hint screen-reader"></span>
+                              </span>
+                        </span>
+                  </button>
+            </div>
+      </div>
+      <!-- Telefon hamburger box VÉGE -->
+
+      <!-- Jobbra vagy balra kattintás -->
+      <div class="container">
+            <div class="side left">
+                  <div class="image rightside"></div>
+                  <div class="caption">
+                        <h1>Szoba létrehozása</h1>
+                        <a class="button" href="#">Kattints ide!</a>
+                  </div>
+            </div>
+
+            <div class="side right">
+                  <div class="image leftside"></div>
+                  <div class="caption">
+                        <h1>Csatlakozás szobához!</h1>
+                        <a class="button" href="#">Kattints ide!</a>
+                  </div>
+            </div>
+      </div>
+
+      <!-- NODAL -->
+      <div class="pure-modal">
+            <input id="modal-trigger-center" class="checkbox" type="checkbox">
+            <div class="pure-modal-overlay">
+                  <label for="modal-trigger-center" class="o-close"></label>
+                  <div class="pure-modal-wrap a-center">
+                        <label for="modal-trigger-center" class="close">&#10006;</label>
+                        <!-- INNENTŐL KELL EDITELNI -->
+                        <form action="index.html" class="login-form">
+                              <h1>Belépés</h1>
+                              <div class="txtb">
+                                    <input type="text">
+                                    <span data-placeholder="Felhasználónév"></span>
+                              </div>
+                              <div class="txtb">
+                                    <input type="password">
+                                    <span data-placeholder="Jelszó"></span>
+                              </div>
+                              <input type="submit" class="logbtn" value="Login">
+                              <div class="bottom-text">
+                                    Nincs még fiókod? <a href="#" class="regiVibe">Regisztrálj!</a>
+                              </div>
+                        </form>
+                  </div>
+            </div>
+      </div>
+      
+      <!-- MODAL VÉGE -->
+
+
+
+      <!-- FOOTER -->
+      <section id="footer">
+            <div class="main-footer">
+                  <div class="logoinfo" data-aos="fade-up">
+                        <div class="contact-details">
+                              <h1>Elérhetőség</h1>
+                              <li>
+                                    <div class="fa fa-phone"></div><a href="tel:+36702787890">+36 702787890</a>
+                              </li>
+                              <li>
+                                    <div class="fa fa-envelope"></div><a
+                                          href="mailto:hajaattila@gmail.com">hajaattila@gmail.com</a>
+                              </li>
+                        </div>
+                  </div>
+            </div>
+            <footer>Minden jog fenttartva</footer>
+      </section>
+      <!-- FOOTER VÉGE -->
+
+      <script src="js/hamburger.js"></script>
+</body>
+</html>
