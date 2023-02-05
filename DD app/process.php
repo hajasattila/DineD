@@ -20,10 +20,10 @@ if(isset($_POST)){
         $stmtinsert = $db->prepare($sql);
         $result = $stmtinsert->execute([$username,$email,$password,$status]);
 
-        if($result){
-            echo true;
+        if ($result) {
+            echo json_encode(array('success' => true));
         } else {
-            echo false;
+            echo json_encode(array('success' => false));
         }
     }
 }
